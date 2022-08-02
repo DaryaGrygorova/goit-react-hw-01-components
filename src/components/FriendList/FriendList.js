@@ -16,5 +16,4 @@ FriendList.propTypes = PropTypes.exact({
   friends: PropTypes.array.isRequired,  
 });
 
-
 export default FriendList;
