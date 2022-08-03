@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StatisticsWrap = styled.section`
-  width: 600px;
+  width: max-content;
   margin-bottom: 15px;
   text-align: center;
   align-items: center;
