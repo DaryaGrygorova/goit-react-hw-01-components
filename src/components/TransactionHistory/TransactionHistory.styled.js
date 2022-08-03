@@ -21,6 +21,8 @@ th {
 
 export const TableBody = styled.tbody`
 color: #555555;
+text-transform: capitalize;
+
 tr {
     background-color: #ebeef5;
 }
