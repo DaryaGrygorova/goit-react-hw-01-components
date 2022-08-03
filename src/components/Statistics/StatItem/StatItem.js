@@ -10,9 +10,9 @@ const StatItem = ({label, percentage}) => {
   );
 };
 
-StatItem.propTypes = PropTypes.exact({
+StatItem.propTypes = {
   label: PropTypes.string.isRequired,
   percentage: PropTypes.number.isRequired,
-})
+}.isRequired
 
 export default StatItem;

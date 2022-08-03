@@ -22,9 +22,9 @@ const Statistics = ({ title, stats }) => {
   );
 };
 
-Statistics.prototype = PropTypes.exact({
+Statistics.prototype = {
   title: PropTypes.string,
   stats: PropTypes.array.isRequired,
-})
+}.isRequired
 
 export default Statistics;

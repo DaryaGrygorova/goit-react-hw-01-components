@@ -10,9 +10,9 @@ const StatsItem = ({label, quantity}) => {
   );
 };
 
-StatsItem.propTypes = PropTypes.exact({
+StatsItem.propTypes = {
   label: PropTypes.string.isRequired,
   quantity: PropTypes.number.isRequired,
-})
+}.isRequired
 
 export default StatsItem;
