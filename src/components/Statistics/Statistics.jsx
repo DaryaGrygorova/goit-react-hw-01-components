@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import StatItem from './StatItem/StatItem';
-import { StatList, StatisticsWrap } from './Statistics.styled';
+import StatItem from './StatisticsItem/StatisticsItem';
+import {Title, StatList, StatisticsWrap } from './Statistics.styled';
 
 const Statistics = ({ title, stats }) => {
   return (
     <StatisticsWrap className="statistics">
-      {title && <h2 className="title">{title}</h2>}
+      {title && <Title className="title">{title}</Title>}
 
       <StatList>
         {stats.map(({ id, label, percentage }) => (

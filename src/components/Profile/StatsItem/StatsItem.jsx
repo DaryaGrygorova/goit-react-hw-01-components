@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
-import { ItemWrap } from "./StatsItem.styled";
+import { ItemWrap, Label, Quantity } from "./StatsItem.styled";
 
 const StatsItem = ({label, quantity}) => {
   return (
     <ItemWrap>
-      <span className="label">{label}</span>
-      <span className="quantity">{quantity}</span>
+      <Label className="label">{label}</Label>
+      <Quantity className="quantity">{new Intl.NumberFormat('en-US').format(quantity)}</Quantity>
     </ItemWrap>
   );
 };

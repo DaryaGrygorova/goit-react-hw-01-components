@@ -8,19 +8,12 @@ import data from '../data/data.json';
 import friends from '../data/friends.json';
 import transactions from '../data/transactions.json';
 
+import { GlobalStyle } from 'GlobalStyle';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        gap: 25,
-        fontSize: 40,
-        color: '#010101',
-      }}
-    >
+    <div>
+      <GlobalStyle />
       <Profile
         username={user.username}
         tag={user.tag}
